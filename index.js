@@ -26,16 +26,35 @@ class Word {
   }
 
   // implement the guessLetter function:
-  // guessLetter(letter) {}
+  guessLetter(letter) {
+    console.log(this.letter)
+    
+    if (this.word.includes(letter)) {
+      console.log("word contains letter");
+      this.correctLetters.push(letter);
+      let correctGuess = [];
+      for (let i = 0; i < this.word.length; i++) {
+        if (this.word[i] === letter) {
+          correctGuess.push(i);
+        }
+      }
+
+  }
 
   // implement the updateScreen function:
-  // updateScreen() {}
+  updateScreen() {
+
+  }
 
   // implement the isGameOver function:
-  // isGameOver() {}
+  isGameOver() {
+
+  }
 
   // implement the getWinOrLoss function:
-  // getWinOrLoss() {}
+  getWinOrLoss() {
+    
+  }
 }
 
 function newGame() {
